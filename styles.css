@@ -1,0 +1,73 @@
+/* General page styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* White text */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Homepage Container */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title Styling */
+.main-title {
+    font-size: 48px;
+    margin-bottom: 50px;
+    color: #ffcc00; /* Bright yellow title */
+}
+
+/* Button Row for aligning buttons in a row */
+.button-row {
+    display: flex;
+    justify-content: center;
+}
+
+/* Custom Button Styles */
+.custom-button {
+    background-color: #ffcc00; /* Yellow button */
+    color: #1a1a1a; /* Dark text */
+    font-size: 20px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    margin: 0 10px; /* Even spacing between buttons */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Hover effect: white border with sharp line */
+.custom-button:hover {
+    border: 2px solid #ffffff; /* White border on hover */
+    background-color: #ff9900; /* Slightly darker yellow on hover */
+    transform: translateY(-5px); /* Pop out effect */
+}
+
+/* When the button is clicked */
+.custom-button:active {
+    background-color: #e68a00; /* Darker orange when clicked */
+    transform: translateY(0); /* Remove the pop-out effect */
+}
+
+/* Three button layout (even though we only show one for now) */
+.custom-button:nth-child(1) {
+    display: block; /* First button is visible */
+}
+
+/* Hiding the other buttons */
+.custom-button:nth-child(2),
+.custom-button:nth-child(3) {
+    display: none; /* Hiding second and third buttons */
+}
